@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">55.000008%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="onboarding_attract_copy_font_size">20.0sp</dimen>
+    <dimen name="onboarding_button_height">70.0dip</dimen>
+    <dimen name="onboarding_default_button_font_size">18.0sp</dimen>
+    <dimen name="onboarding_default_font_size">16.0sp</dimen>
+    <dimen name="onboarding_game_icon_size">180.0dip</dimen>
+    <dimen name="onboarding_header_font_size">22.0sp</dimen>
+    <dimen name="onboarding_header_size">40.0dip</dimen>
+    <dimen name="onboarding_notsure_button_font_size">14.0sp</dimen>
+    <dimen name="onboarding_quiz_icon_height">400.0dip</dimen>
+    <dimen name="onboarding_quiz_icon_width">280.0dip</dimen>
+    <dimen name="onboarding_subheader_font_size">20.0sp</dimen>
+    <dimen name="onboarding_subheader_size">25.0dip</dimen>
+</resources>

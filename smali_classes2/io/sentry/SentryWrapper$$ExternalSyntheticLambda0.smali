@@ -1,0 +1,44 @@
+.class public final synthetic Lio/sentry/SentryWrapper$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# instance fields
+.field public final synthetic f$0:Lio/sentry/IScopes;
+
+.field public final synthetic f$1:Ljava/util/concurrent/Callable;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/sentry/IScopes;Ljava/util/concurrent/Callable;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/sentry/SentryWrapper$$ExternalSyntheticLambda0;->f$0:Lio/sentry/IScopes;
+
+    iput-object p2, p0, Lio/sentry/SentryWrapper$$ExternalSyntheticLambda0;->f$1:Ljava/util/concurrent/Callable;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final call()Ljava/lang/Object;
+    .locals 2
+
+    .line 0
+    iget-object v0, p0, Lio/sentry/SentryWrapper$$ExternalSyntheticLambda0;->f$0:Lio/sentry/IScopes;
+
+    iget-object v1, p0, Lio/sentry/SentryWrapper$$ExternalSyntheticLambda0;->f$1:Ljava/util/concurrent/Callable;
+
+    invoke-static {v0, v1}, Lio/sentry/SentryWrapper;->lambda$wrapCallable$0(Lio/sentry/IScopes;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method

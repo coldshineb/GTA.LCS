@@ -1,0 +1,2 @@
+assets/data_main.wad filter=lfs diff=lfs merge=lfs -text
+assets/data_music.wad filter=lfs diff=lfs merge=lfs -text

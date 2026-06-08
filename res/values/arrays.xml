@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ad_gate_options">
+        <item>Subscribe to GameClub Pro</item>
+        <item>Watch video ad</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="developer_mode_ad_options">
+        <item>Show Advertisement</item>
+        <item>Complete</item>
+    </string-array>
+    <string-array name="developer_mode_gate_options">
+        <item>Normal Action</item>
+        <item>debug: allow access</item>
+        <item>debug: deny access</item>
+    </string-array>
+</resources>
