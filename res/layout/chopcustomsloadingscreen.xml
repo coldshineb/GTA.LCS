@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@drawable/chop" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chop" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <LinearLayout android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="16.5" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:alpha="0.5">
+            <RelativeLayout android:layout_width="95.0dip" android:layout_height="fill_parent" android:layout_weight="307.99" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.25">
+            <ProgressBar android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/progress_offset_value" android:indeterminate="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
