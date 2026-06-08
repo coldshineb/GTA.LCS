@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:name="isGame" android:value="true" package="com.rockstargames.gtalcs" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22" />
+    <uses-configuration/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.gamepad" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <supports-screens/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application android:allowClearUserData="true" android:banner="@drawable/banner" android:debuggable="false" android:extractNativeLibs="true" android:icon="@drawable/gta_icon" android:isGame="true" android:label="GTA: LCS" android:largeHeap="true" android:name="com.fastman92.main_activity_launcher.Application" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <service android:name="com.rockstargames.gtalcs.lucidobb.LucidOBBDownloaderService"/>
+        <receiver android:name="com.rockstargames.gtalcs.lucidobb.LucidOBBAlarmReceiver"/>
+        <activity android:exported="false" android:name="com.rockstargames.gtalcs.lucidobb.LucidOBBDownloaderActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.NoActionBar.FullScreen"/>
+        <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <activity android:exported="false" android:label="GTA: LCS" android:name="com.rockstargames.gtalcs.BootGameActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:exported="true" android:label="GTA: LCS" android:launchMode="singleTask" android:name="com.fastman92.main_activity_launcher.MainActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <meta-data android:name="ACTIVITY_TO_LAUNCH" android:value="com.rockstargames.gtalcs.BootGameActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.fastman92.main_activity_launcher.SettingsLoader" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.rockstargames.gtalcs.SETTINGS_LOADER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenSize|layoutDirection|fontScale" android:exported="false" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.rockstargames.gtalcs.GTAActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:exported="false" android:name="com.rockstargames.gtalcs.MovieActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.rockstargames.socialclub.SocialClubActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="LAUNCHER_USE_LAUNCHER_SETTINGS_XML" android:value="no"/>
+        <meta-data android:name="LAUNCHER_ORIGINAL_PACKAGE_NAME" android:value="com.rockstargames.gtalcs"/>
+        <meta-data android:name="LAUNCHER_USE_ANDROID_UNPROTECTED_DIRECTORY" android:value="no"/>
+        <meta-data android:name="LAUNCHER_ANDROID_DATA_DIRECTORY" android:value="com.rockstargames.gtalcs"/>
+        <meta-data android:name="LAUNCHER_ANDROID_OBB_DIRECTORY" android:value="com.rockstargames.gtalcs"/>
+        <meta-data android:name="LAUNCHER_CHECK_FOR_MULTIPLE_DIRS" android:value="yes"/>
+        <meta-data android:name="LAUNCHER_ASSETPACKS_USED" android:value="no"/>
+        <meta-data android:name="LAUNCHER_OBB_USED" android:value="yes"/>
+        <meta-data android:name="LAUNCHER_SHOW_MESSAGE_BOX_ON_APPLICATION_STARTUP" android:value="no"/>
+        <meta-data android:name="LAUNCHER_LOAD_APK_MODIFIER_NATIVE_LIBRARY" android:value="yes"/>
+        <meta-data android:name="LAUNCHER_CONTAINS_SIGNATURES" android:value="yes"/>
+    </application>
+</manifest>

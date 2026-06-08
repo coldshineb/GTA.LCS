@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/highlightps3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/colourhighlightps3" android:scaleType="fitXY" />
+    <ImageView android:id="@id/highlight360" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/colourhighlight360" android:scaleType="fitXY" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/swatchLayout" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip">
+        <ImageView android:id="@id/swatchBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/colour_icon_backing" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/colourOverlayLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/colourOverlayImage" android:layout_width="45.0dip" android:layout_height="45.0dip" android:adjustViewBounds="true" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_alignParentBottom="false" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/colourSwatchTop" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/colour_icon" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/colourLockLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/colourLock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lock2x" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/noneLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/colourNone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/colour_icon_none" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TableRow android:gravity="center_vertical" android:id="@id/tableRow1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="80.0dip">
+        <TextView android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/colourName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" android:layout_weight="50.0" />
+        <TextView android:textColor="#ffffffff" android:gravity="right|center" android:layout_gravity="right|center" android:id="@id/colourCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Cost" android:layout_weight="0.0" />
+    </TableRow>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Audio>
+  <SoundData>
+    <Name>FRONT_END</Name>
+    <Volume>25</Volume>
+    <LoopCount>0</LoopCount>
+    <SequenceType>0</SequenceType>
+    <Files>
+      <File>PLAYER_SWITCH</File>
+      <File>MENU_BACK</File>
+      <File>MENU_SELECT</File>
+      <File>NAV_DOWN</File>
+      <File>NAV_UP</File>
+      <File>LOCKED</File>
+      <File>RESET</File>
+    </Files>
+  </SoundData>
+</Audio>
